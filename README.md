@@ -20,4 +20,5 @@ For instance:
     What is your favorite actor?
     Tom cruise, because it is also scientologist.
 
+Sample output is here: https://www.dropbox.com/s/s1x1nyof1gf9ikq/favorite_generated_clean.txt
 
