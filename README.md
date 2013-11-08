@@ -8,12 +8,16 @@ Thus far, it consists of:
 * questions.pl - a set of prolog rules that generate question and answer pairs about subjects covered in the ontology
 * fav.sh - a script that generates a list of question and answer pairs about favorite things found in the ontology
 
+
 The dialog is of the formula:
-	What is your favorite $X?
-	$Y, because it is also $Z.
+
+    What is your favorite $X?
+    $Y, because it is also $Z.
+
 
 For instance:
-	What is your favorite actor?
-	tom cruise, because it is also scientologist.
+
+    What is your favorite actor?
+    Tom cruise, because it is also scientologist.
 
 
