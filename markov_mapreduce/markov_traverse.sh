@@ -10,14 +10,14 @@ function multiply() {
 	}'
 }
 function randline() {
-	temp=""
-	while read x ; do
-		temp="${temp}\n$x"
-	done
-	len=$(echo -e $temp | wc -l)
-	random -er $len
-	l=$?
-	echo -e $temp | head -n $((l+1)) | tail -n 1
+	f=.$$
+	cat >| $f
+	len=$(cat $f  | wc -l)
+	if [[ $len -gt 0 ]] ; then
+		l=$((RANDOM % len))
+		cat $f | head -n $((l+1)) | tail -n 1
+	fi
+	rm $f
 }
 
 echo -e "${start} \c"
