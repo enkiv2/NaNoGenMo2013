@@ -16,6 +16,8 @@ function randline() {
 	if [[ $len -gt 0 ]] ; then
 		l=$((RANDOM % len))
 		cat $f | head -n $((l+1)) | tail -n 1
+	else
+		cat $f | head -n 1
 	fi
 	rm $f
 }
